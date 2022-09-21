@@ -23,6 +23,18 @@
         float: right; /*vai deixar o formulário do lado direito*/
         width: 70%;
     }
+
+    div#formulario > h1 {
+        font-size: 2em;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    div#formulario > p {
+        font-size: 1em;
+        margin-bottom: 25px;
+    }
+
 }
 
 /*Versão para telas maiores que 992px:*/
@@ -33,7 +45,8 @@
     }
 
     section#login {
-        width: 950px; /*ele para de crescer quando atinge 950px; senao ele fica muito grande conforme a tela aumenta de tamanho*/
+        width: 800px; /*ele para de crescer quando atinge 950px; senao ele fica muito grande conforme a tela aumenta de tamanho*/
+        height: 300px;
     }
 
     section#login > div#imagem {
@@ -46,4 +59,16 @@
         float: right; /*vai deixar o formulário do lado direito*/
         width: 50%;
     }
+
+    div#formulario > h1 {
+        font-size: 2em;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    div#formulario > p {
+        font-size: 1em;
+        margin-bottom: 25px;
+    }
+
 }
