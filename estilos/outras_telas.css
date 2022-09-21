@@ -11,6 +11,7 @@
 
     section#login {
         width: 80vw; /*vai aumentar a largura em relação à versão mobile*/
+        height: 350px;
     }
 
     section#login > div#imagem {

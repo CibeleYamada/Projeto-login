@@ -30,14 +30,13 @@ section#login {
     position: absolute; /*a junção do position absolute com o top e left 50%, e o transform deixaram a section no meio da tela, independente da resolução.*/
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden; /*tudo que tiver fora da borda vai ficar escondida - é para a imagem ficar dentro da borda.*/
     background-color: white;
     width: 250px; /*largura para versão mobile*/
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.457);
-
+    transform: translate(-50%, -50%); /*todas as transform e transition deixar para colocar por último*/
     transition: width 0.3s, height 0.3s; /*para quando estiver aumentando a tela, não dar aquela quebrada brusca*/
     transition-timing-function: ease; /*dá uma suavizada na animação (transition)*/
 }
@@ -70,6 +69,7 @@ form > div.campo {
     display: block;
     height: 35px;
     background-color: blueviolet;
+    border: 2px solid blueviolet;
     border-radius: 5px;
     margin-bottom: 5px;
 }
@@ -80,12 +80,25 @@ div.campo > label {
 
 form > div.campo > span {
     color: white;
+    font-size: 1.6em;
+    width: 40px;
+    padding: 5px;
 }
 
 form > div.campo > input {
+    background-color:rgba(38, 38, 214, 0.589) ;
+    font-size: 1em;
+    height: 80%;
+    border: 0px;
+    border-radius: 5px;
     padding: 3px;
-    width: 80%;
+    width: calc(100% - 45px);
+    transform: translateY(-8px); /*deixar o transform sempre por último*/
+}
 
+form > div.campo > input:focus-within { /*focus-within = é quando estiver digitando*/
+    background-color: white;
+    cursor: pointer;
 }
 
 form > input[type=submit] {
