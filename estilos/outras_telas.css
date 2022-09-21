@@ -46,7 +46,7 @@
 
     section#login {
         width: 800px; /*ele para de crescer quando atinge 950px; senao ele fica muito grande conforme a tela aumenta de tamanho*/
-        height: 300px;
+        height: 350px;
     }
 
     section#login > div#imagem {
